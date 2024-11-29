@@ -1,0 +1,65 @@
+@{
+    ViewData["Title"] = "Registrar-se";
+}
+
+<main class="conteudo-container">
+    <div class="formulario-informacoes">
+        <form action="post">
+            <div class="bloco-1">
+                <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome">
+            </div>
+
+            <div class="bloco-2">
+                <input type="text" name="Email" id="Email" placeholder="Digite seu email">
+            </div>
+
+            <div class="bloco-3">
+                <input type="text" name="CPF" id="CPF" placeholder="Digite seu CPF">
+            </div>
+
+            <div class="bloco-4">
+                <input type="button" value="Voltar" id="Voltar">
+                <input type="button" value="Continuar" id="Continuar">
+            </div>
+        </form>
+    </div>
+
+    <div class="imagens">
+        <div class="image">
+            <img src="https://www.monsystemeimmunitaire.fr/wp-content/uploads/2023/08/AdobeStock_293343151-2048x1367.jpeg" alt="">
+        </div>
+    </div>
+</main>
+
+<style>
+    body {
+        min-height: 100vh;
+        background-color: #1F4E79;
+    }
+
+    .conteudo-container {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+    }
+
+    .formulario-informacoes {
+        position: relative;
+        display: flex;
+    }
+
+    .formulario-informacoes form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 300px;
+    }
+
+    .image img{
+        width: 727px;
+    }
+</style>
