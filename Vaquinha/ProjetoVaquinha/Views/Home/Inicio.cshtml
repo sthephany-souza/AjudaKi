@@ -6,39 +6,56 @@
     <div class="navegacao">
         <div class="botoes">
             <ul class="opcoes">
-                <li>
+                <li class="botoes-opcoes">
                     <i class="bi bi-house-fill"></i>
-                    <button class="inicio">Início</button>
+                    <a href="../Home/Index" class="btn btn-primary">
+                        Voltar
+                    </a>
                 </li>
 
-                <li>
+                <li class="botoes-opcoes">
                     <i class="bi bi-plus-lg"></i>
-                    <button class="inicio">Criar Campanha</button>
+                    <button class="criar-campanha btn btn-primary" id="criar-campanha">
+                        Criar Campanha
+                    </button>
                 </li>
 
-                <li>
+                <li class="botoes-opcoes">
                     <i class="bi bi-gift-fill"></i>
-                    <button class="inicio">Minhas Campanhas</button>
+                    <button class="minha-campanha btn btn-primary" id="minhas-campanhas">
+                        Minhas Campanhas
+                    </button>
                 </li>
 
-                <li>
+                <li class="botoes-opcoes">
                     <i class="bi bi-heart-fill"></i>
-                    <button class="inicio">Doações</button>
+                    <a href="../Doacao" class="btn btn-primary">
+                        Doações
+                    </a>
                 </li>
 
-                <li>
+                <li class="botoes-opcoes">
                     <i class="bi bi-telephone-fill"></i>
-                    <button class="inicio">Contato</button>
+                    <button class="contato btn btn-primary" id="contato">
+                        Contato
+                    </button>
                 </li>
             </ul>
         </div>
 
         <div class="extras">
             <ul class="links">
-                <li>Excluir conta</li>
                 <li>
-                    Ajuda
-                    <i class="bi bi-question-circle-fill"></i>
+                    <a href="">
+                        Excluir Contato
+                    </a>
+                </li>
+
+                <li>
+                    <a href="">
+                        Ajuda
+                        <i class="bi bi-question-circle-fill"></i>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -48,7 +65,40 @@
 <main class="conteudo-container">
     <div class="conteudos">
         <div class="slideshow">
+            <div class="slides">
+                <img src="" alt="" class="slide">
 
+                <div class="text">
+                    <h4 class="titulo-slide">
+                        "Movimento Esperança: Doe uma Cadeira de Rodas"
+                    </h4>
+
+                    <p class="texto-slide">
+                        Olá, sou Ana, mãe do Gabriel, de 8 anos, que tem paralisia cerebral e precisa de uma cadeira de rodas para ser mais independente.
+                    </p>
+                </div>
+            </div>
+
+            <div class="slides">
+                <img src="" alt="" class="slide">
+
+                <div class="text">
+                    <h4 class="titulo-slide">
+                        "Preciso de ajuda para meus tratamentos"
+                    </h4>
+
+                    <p class="texto-slide">
+                        Estou passando por um momento difícil e preciso de apoio para superar os desafios que enfrento em relação à minha saúde.
+                    </p>
+                </div>
+            </div>
+
+            <a class="btn btn-secondary">
+                <span class="bi bi-arrow-left"></span>
+            </a>
+            <a class="btn btn-secondary">
+                <span class="bi bi-arrow-right"></span>
+            </a>
         </div>
 
         <div class="botao">

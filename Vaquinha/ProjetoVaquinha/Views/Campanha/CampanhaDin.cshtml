@@ -1,25 +1,26 @@
 @{
-    ViewData["Title"] = "Registrar-se";
+    ViewData["Title"] = "Criar Campanha - Dinheiro";
 }
 
 <main class="conteudo-container">
     <div class="formulario-informacoes">
         <form action="post">
             <div class="bloco-1">
-                <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome">
+                <input type="text" name="Quantia" id="Quantia" placeholder="R$">
             </div>
 
             <div class="bloco-2">
-                <input type="text" name="Email" id="Email" placeholder="Digite seu email">
+                <label for="Data">Data:</label>
+                <input type="date" name="Data" id="Data" placeholder="  /  /  ">
             </div>
 
             <div class="bloco-3">
-                <input type="text" name="CPF" id="CPF" placeholder="Digite seu CPF">
+                <input type="file" name="ImagemProd" id="ImagemProd">
             </div>
 
             <div class="bloco-4">
-                <a href="../Home/Index" class="btn btn-primary">Voltar</a>
-                <button class="btn btn-primary" id="Proxima">Próxima</button>
+                <a href="../Campanha/Campanha" class="btn btn-primary">Voltar</a>
+                <button class="btn btn-primary" id="Confirmar">Confirmar</button>
             </div>
         </form>
     </div>

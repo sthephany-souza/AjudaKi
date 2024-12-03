@@ -18,12 +18,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\STHEPHANY\Documents\Fatec\PW\1DSM\Vaquinha\ProjetoVaquinha
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/STHEPHANY/Documents/Fatec/PW/1DSM/Vaquinha/ProjetoVaquinha/Views/Campanha/Campanha.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFuaGFcQ2FtcGFuaGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/STHEPHANY/Documents/Fatec/PW/1DSM/Vaquinha/ProjetoVaquinha/Views/Campanha/CampanhaDin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFuaGFcQ2FtcGFuaGFEaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/STHEPHANY/Documents/Fatec/PW/1DSM/Vaquinha/ProjetoVaquinha/Views/Campanha/CampanhaProd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFuaGFcQ2FtcGFuaGFQcm9kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/STHEPHANY/Documents/Fatec/PW/1DSM/Vaquinha/ProjetoVaquinha/Views/Campanha/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGFuaGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/STHEPHANY/Documents/Fatec/PW/1DSM/Vaquinha/ProjetoVaquinha/Views/Doacao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hY2FvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/STHEPHANY/Documents/Fatec/PW/1DSM/Vaquinha/ProjetoVaquinha/Views/Doacao/InfoProdutos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hY2FvXEluZm9Qcm9kdXRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/STHEPHANY/Documents/Fatec/PW/1DSM/Vaquinha/ProjetoVaquinha/Views/Doacao/Pagamento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9hY2FvXFBhZ2FtZW50by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/STHEPHANY/Documents/Fatec/PW/1DSM/Vaquinha/ProjetoVaquinha/Views/Home/Index.cshtml]

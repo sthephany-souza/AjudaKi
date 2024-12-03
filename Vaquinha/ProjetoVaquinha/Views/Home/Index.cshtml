@@ -2,6 +2,30 @@
     ViewData["Title"] = "Home Page";
 }
 
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3" style="background-color: trasnparent;">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <span class="bi bi-person-circle" style="color: #fff;"></span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Registro" asp-action="Index">Registrar-se</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Registro" asp-action="Login">Entrar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+</header>
+
 <div class="text-center">
     <div class="bg">
         <h1 class="display-4">Vaquinha On-line</h1>
@@ -23,25 +47,27 @@
 
     .text-center {
         background: rgba(217, 217, 217, 0.6);
-        position: absolute;top: 50%;left: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
         transform: translate(-50%, -50%);
         width: 1040px;
         height: 460px;
     }
 
-    .text-center .bg{
+    .text-center .bg {
         font-family: "Inter", sans-serif;
     }
 
-    .bg .display-4{
+    .bg .display-4 {
         font-weight: bolder;
     }
 
-    .bg .subtitle{
+    .bg .subtitle {
         font-weight: bold;
     }
 
-    .bg .paragraph{
+    .bg .paragraph {
         font-weight: 600;
     }
 </style>
