@@ -4,7 +4,7 @@
 
 <main class="doacoes-container">
     <div class="topo">
-        <a href="" class="voltar">
+        <a href="~/Home/Inicio" class="voltar">
             <span class="bi bi-arrow-left"></span>
         </a>
         
@@ -13,66 +13,135 @@
 
     <div class="doacoes">
         <div class="slideshow-cartoes">
-            <div class="card">
-                <img class="imagem-cartao" src="" alt="">
-
-                <div class="cartao-infos">
-                    <h5 class="titulo-cartao"></h5>
-
-                    <p class="local">
-                        <span class="bi bi-geo-alt-fill"></span>
-                    </p>
-                    <p class="tamanho"></p>
-                    <p class="contato"></p>
-
-                    <a href="~/Doacao/InfoProdutos" class="btn btn-primary">
-                        Ver Mais...
-                    </a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="imagem-cartao" src="" alt="">
-
-                <div class="cartao-infos">
-                    <h5 class="titulo-cartao"></h5>
-
-                    <p class="local">
-                        <span class="bi bi-geo-alt-fill"></span>
-                    </p>
-                    <p class="tamanho"></p>
-                    <p class="contato"></p>
-
-                    <a href="~/Doacao/InfoProdutos" class="btn btn-primary">
-                        Ver Mais...
-                    </a>
-                </div>
-            </div>
-
-            <div class="card">
-                <img class="imagem-cartao" src="" alt="">
-
-                <div class="cartao-infos">
-                    <h5 class="titulo-cartao"></h5>
-
-                    <p class="local">
-                        <span class="bi bi-geo-alt-fill"></span>
-                    </p>
-                    <p class="tamanho"></p>
-                    <p class="contato"></p>
-
-                    <a href="~/Doacao/InfoProdutos" class="btn btn-primary">
-                        Ver Mais...
-                    </a>
-                </div>
-            </div>
-
-            <a class="btn btn-secondary">
+            <button class="btn btn-secondary">
                 <span class="bi bi-arrow-left"></span>
-            </a>
-            <a class="btn btn-secondary">
+            </button>
+
+            <div class="card">
+                <img class="imagem-cartao" src="" alt="">
+
+                <div class="cartao-infos">
+                    <h5 class="titulo-cartao"></h5>
+
+                    <p class="local">
+                        <span class="bi bi-geo-alt-fill"></span>
+                    </p>
+                    <p class="tamanho"></p>
+                    <p class="contato"></p>
+
+                    <a href="~/Doacao/InfoProdutos" class="btn">
+                        Ver Mais...
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imagem-cartao" src="" alt="">
+
+                <div class="cartao-infos">
+                    <h5 class="titulo-cartao"></h5>
+
+                    <p class="local">
+                        <span class="bi bi-geo-alt-fill"></span>
+                    </p>
+                    <p class="tamanho"></p>
+                    <p class="contato"></p>
+
+                    <a href="~/Doacao/InfoProdutos" class="btn">
+                        Ver Mais...
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="imagem-cartao" src="" alt="">
+
+                <div class="cartao-infos">
+                    <h5 class="titulo-cartao"></h5>
+
+                    <p class="local">
+                        <span class="bi bi-geo-alt-fill"></span>
+                    </p>
+                    <p class="tamanho"></p>
+                    <p class="contato"></p>
+
+                    <a href="~/Doacao/InfoProdutos" class="btn">
+                        Ver Mais...
+                    </a>
+                </div>
+            </div>
+
+            <button class="btn btn-secondary">
                 <span class="bi bi-arrow-right"></span>
-            </a>
+            </button>
         </div>
     </div>
 </main>
+
+<style>
+    body {
+        background-color: #1F4E79;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1240px;
+        height: 460px;
+        margin: 0 25px;
+    }
+
+    .doacoes-container {
+        background-color: #fff;
+        border-radius: 15px;
+        height: 500px;
+        margin-left: 28px;
+    }
+
+    .doacoes-container .topo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .topo .voltar {
+        margin-right: 40%;
+    }
+
+    .voltar span {
+        color: #000;
+        font-size: 30px;
+    }
+    .slideshow-cartoes {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .slideshow-cartoes .card {
+        max-width: 260px;
+        max-height: 500px;
+        border: none;
+    }
+
+    .card .imagem-cartao {
+        height: 50%;
+    }
+
+    .card a {
+        background-color: #4A90E2;
+        color: #fff;
+        border-radius: 15px 0 15px 0;
+    }
+
+    .btn-secondary {
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

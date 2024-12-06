@@ -8,37 +8,37 @@
             <ul class="opcoes">
                 <li class="botoes-opcoes">
                     <i class="bi bi-house-fill"></i>
-                    <a href="../Home/Index" class="btn btn-primary">
-                        Voltar
+                    <a href="../Home/Inicio" class="btn">
+                        Início
                     </a>
                 </li>
 
                 <li class="botoes-opcoes">
                     <i class="bi bi-plus-lg"></i>
-                    <button class="criar-campanha btn btn-primary" id="criar-campanha">
+                    <a class="criar-campanha btn" id="criar-campanha">
                         Criar Campanha
-                    </button>
+                    </a>
                 </li>
 
                 <li class="botoes-opcoes">
                     <i class="bi bi-gift-fill"></i>
-                    <button class="minha-campanha btn btn-primary" id="minhas-campanhas">
+                    <a class="minha-campanha btn" id="minhas-campanhas">
                         Minhas Campanhas
-                    </button>
+                    </a>
                 </li>
 
                 <li class="botoes-opcoes">
                     <i class="bi bi-heart-fill"></i>
-                    <a href="../Doacao" class="btn btn-primary">
+                    <a href="../Doacao" class="btn">
                         Doações
                     </a>
                 </li>
 
                 <li class="botoes-opcoes">
                     <i class="bi bi-telephone-fill"></i>
-                    <button class="contato btn btn-primary" id="contato">
+                    <a class="contato btn" id="contato">
                         Contato
-                    </button>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -64,45 +64,216 @@
 
 <main class="conteudo-container">
     <div class="conteudos">
-        <div class="slideshow">
-            <div class="slides">
-                <img src="" alt="" class="slide">
+        <button class="btn-seta" id="btn-voltar">
+            <span class="bi bi-arrow-left"></span>
+        </button>
 
-                <div class="text">
+        <ul class="slideshow">
+            <li class="slides selecionado">
+                <img src="" alt="" class="slide-image">
+
+                <div class="texto">
                     <h4 class="titulo-slide">
                         "Movimento Esperança: Doe uma Cadeira de Rodas"
                     </h4>
 
                     <p class="texto-slide">
-                        Olá, sou Ana, mãe do Gabriel, de 8 anos, que tem paralisia cerebral e precisa de uma cadeira de rodas para ser mais independente.
+                        Olá, sou Ana, mãe do Gabriel, de 8 anos, que tem paralisia cerebral e precisa de uma cadeira de
+                        rodas para ser mais independente.
                     </p>
                 </div>
-            </div>
 
-            <div class="slides">
-                <img src="" alt="" class="slide">
+                <a href="~/Doacao/Pagamento" class="apoiar btn">Apoiar</a>
+            </li>
 
-                <div class="text">
+            <li class="slides">
+                <img src="" alt="" class="slide-image">
+
+                <div class="texto">
                     <h4 class="titulo-slide">
                         "Preciso de ajuda para meus tratamentos"
                     </h4>
 
                     <p class="texto-slide">
-                        Estou passando por um momento difícil e preciso de apoio para superar os desafios que enfrento em relação à minha saúde.
+                        Estou passando por um momento difícil e preciso de apoio para superar os desafios que enfrento
+                        em
+                        relação à minha saúde.
                     </p>
                 </div>
-            </div>
 
-            <a class="btn btn-secondary">
-                <span class="bi bi-arrow-left"></span>
-            </a>
-            <a class="btn btn-secondary">
-                <span class="bi bi-arrow-right"></span>
-            </a>
-        </div>
+                <a href="~/Doacao/Pagamento" class="apoiar btn">Apoiar</a>
+            </li>
+        </ul>
 
-        <div class="botao">
-            <button class="apoiar">Apoiar</button>
-        </div>
+        <button class="btn-seta" id="btn-avancar">
+            <span class="bi bi-arrow-right"></span>
+        </button>
     </div>
 </main>
+
+<style>
+    body {
+        background-color: #1F4E79;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1240px;
+        height: 460px;
+        margin: 0 25px;
+    }
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 15px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .sidebar .navegacao {
+        background-color: #fff;
+        border-radius: 15px;
+        height: 450px;
+    }
+
+    .navegacao .botoes {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+    }
+
+    .botoes .opcoes {
+        list-style: none;
+    }
+
+    .botoes-opcoes {
+        margin: 15px;
+    }
+
+    .botoes-opcoes a {
+        border-radius: 15px 0 15px 0;
+        background-color: #4A90E2;
+        color: #fff;
+        margin: 0 5px;
+    }
+
+    .extras li {
+        list-style: none;
+        margin: 5px;
+    }
+
+    .extras li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .conteudo-container {
+        position: fixed;
+        margin-left: 320px;
+        margin-right: 56px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        padding: 15px;
+    }
+
+    .conteudos {
+        background-color: #fff;
+        border-radius: 15px;
+        height: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .slideshow {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slides {
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .slides.selecionado {
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .btn-seta {
+        background-color: #4A90E2;
+        color: #fff;
+        width: 70px;
+        height: 70px;
+        border: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px 0 15px 0;
+    }
+
+    .slideshow .btn {
+        border-radius: 15px 0 15px 0;
+        background-color: #4A90E2;
+        color: #fff;
+        width: 80px;
+        left: 40px;
+    }
+</style>
+
+<script>
+    // - passo 1 - dar um jeito de pegar o elemento HTML da seta avancar
+    const btnAvancar = document.getElementById("btn-avancar");
+
+    // - passo 1 - dar um jeito de pegar o elemento HTML da seta voltar
+    const btnVoltar = document.getElementById("btn-voltar");
+
+    let slideAtual = 0;
+    const slides = document.querySelectorAll(".slides");
+
+    // - passo 2 - dar um jeito de identificar o clique do usuário na seta avançar
+    btnAvancar.addEventListener("click", function () {
+        const ultimoSlide = slideAtual === slides.length - 1;
+        if (ultimoSlide) return;
+
+        // - passo 4 - buscar o cartão que esta selecionado e esconder
+        esconderSlide();
+
+        // - passo 3 - fazer aparecer o próximo cartão da lista
+        slideAtual++;
+        mostrarSlide();
+    });
+
+    // -- OBJETIVO 2 - quando clicarmos na seta de voltar temos que mostrar o cartão anterior da lista
+
+    // - passo 2 - dar um jeito de identificar o clique do usuário na seta voltar
+    btnVoltar.addEventListener("click", function () {
+        const primeiroSlide = slideAtual === 0;
+        if (primeiroSlide) return;
+
+        // - passo 4 - buscar o cartão que esta selecionado e esconder
+        esconderSlide();
+
+        // - passo 3 - fazer aparecer o cartão anterior da lista
+        slideAtual--;
+        mostrarSlide();
+    });
+
+    function mostrarSlide() {
+        slides[slideAtual].classList.add("selecionado");
+    }
+
+    function esconderSlide() {
+        const slideSelecionado = document.querySelector(".selecionado");
+        slideSelecionado.classList.remove("selecionado");
+    }
+</script>

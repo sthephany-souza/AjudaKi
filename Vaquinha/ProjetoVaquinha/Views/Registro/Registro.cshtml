@@ -4,7 +4,9 @@
 
 <main class="conteudo-container">
     <div class="formulario-informacoes">
-        <form action="post">
+        <form method="post" asp-action="AdicionarUsu">
+            <h2>Criar conta:</h2>
+
             <div class="bloco-1">
                 <input type="text" name="Senha" id="Senha" placeholder="Digite sua senha">
             </div>
@@ -13,9 +15,9 @@
                 <input type="text" name="ConfiSenha" id="ConfiSenha" placeholder="Confirme sua senha">
             </div>
 
-            <div class="bloco-4">
-                <a href="../Registro" class="btn btn-primary">Voltar</a>
-                <button class="btn btn-primary" id="Confirmar">Confirmar</button>
+            <div class="bloco-3">
+                <a href="../Registro" class="btn">Voltar</a>
+                <button class="btn" id="Confirmar">Confirmar</button>
             </div>
         </form>
     </div>
@@ -37,9 +39,10 @@
         display: flex;
         align-items: center;
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
+        background-color: #fff;
     }
 
     .formulario-informacoes {
@@ -54,7 +57,52 @@
         width: 300px;
     }
 
+    .formulario-informacoes form h2{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+        color: #4A90E2;
+        font-weight: bold;
+    }
+
+    .formulario-informacoes .bloco-1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .formulario-informacoes .bloco-2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .formulario-informacoes .bloco-3{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 45px;
+    }
+
+    .bloco-3 .btn{
+        border-radius: 15px 0 15px 0;
+        background-color: #4A90E2;
+        color: #fff;
+    }
+
+    input {
+        border: 0;
+        border-radius: 8px;
+        background-color: #D9D9D9;
+        height: 35px;
+    }
+
+    input::placeholder {
+        color: #9d9d9d;
+        opacity: 1;
+        padding-left: 8px;
+    }
+
     .image img{
-        width: 727px;
+        width: 580px;
+        height: 450px;
+        object-fit: cover;
     }
 </style>

@@ -4,29 +4,31 @@
 
 <main class="conteudo-container">
     <div class="formulario-informacoes">
-        <form action="post">
+        <form method="post" asp-action="Adicionar">
+            <h2>Criar conta:</h2>
+
             <div class="bloco-1">
-                <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome">
+                <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome:">
             </div>
 
             <div class="bloco-2">
-                <input type="text" name="Email" id="Email" placeholder="Digite seu email">
+                <input type="text" name="Email" id="Email" placeholder="Digite seu email:">
             </div>
 
             <div class="bloco-3">
-                <input type="text" name="CPF" id="CPF" placeholder="Digite seu CPF">
+                <input type="text" name="CPF" id="CPF" placeholder="Digite seu CPF:">
             </div>
 
             <div class="bloco-4">
-                <a href="../Home/Index" class="btn btn-primary">Voltar</a>
-                <button class="btn btn-primary" id="Proxima">Próxima</button>
+                <a href="../Home" class="btn">Voltar</a>
+                <button class="btn" id="Proxima">Próxima</button>
             </div>
         </form>
     </div>
 
     <div class="imagens">
         <div class="image">
-            <img src="https://www.monsystemeimmunitaire.fr/wp-content/uploads/2023/08/AdobeStock_293343151-2048x1367.jpeg" alt="">
+            <img class="imagem" src="https://www.monsystemeimmunitaire.fr/wp-content/uploads/2023/08/AdobeStock_293343151-2048x1367.jpeg" alt="">
         </div>
     </div>
 </main>
@@ -41,7 +43,7 @@
         display: flex;
         align-items: center;
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: #fff;
@@ -59,7 +61,57 @@
         width: 300px;
     }
 
+    .formulario-informacoes form h2{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+        color: #4A90E2;
+        font-weight: bold;
+    }
+    
+    .formulario-informacoes .bloco-1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .formulario-informacoes .bloco-2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .formulario-informacoes .bloco-3{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .formulario-informacoes .bloco-4{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+
+    .bloco-4 .btn{
+        border-radius: 15px 0 15px 0;
+        background-color: #4A90E2;
+        color: #fff;
+    }
+
+    input {
+        border: 0;
+        border-radius: 8px;
+        background-color: #D9D9D9;
+        height: 35px;
+    }
+
+    input::placeholder {
+        color: #9d9d9d;
+        opacity: 1;
+        padding-left: 8px;
+    }
+
     .image img{
-        width: 727px;
+        width: 580px;
+        height: 450px;
+        object-fit: cover;
     }
 </style>

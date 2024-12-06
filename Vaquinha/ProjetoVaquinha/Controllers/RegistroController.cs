@@ -19,4 +19,25 @@ public class RegistroController : Controller{
     {
         return View();
     }
+
+    [HttpPost]
+    public IActionResult Adicionar(Registro registro)
+    {
+        RepositorioRegistrar.AdicionarUsuario(registro);
+        return RedirectToAction("Registro");
+    }
+
+    [HttpPost]
+    public IActionResult AdicionarUsu(Registro registro)
+    {
+        RepositorioRegistrar.AdicionarUsuario(registro);
+        return RedirectToAction("Inicio", "Home");
+    }
+
+    [HttpPost]
+    public IActionResult Logar(Registro registro)
+    {
+        RepositorioRegistrar.AdicionarUsuario(registro);
+        return RedirectToAction("Inicio", "Home");
+    }
 }
