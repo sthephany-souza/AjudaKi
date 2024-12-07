@@ -25,6 +25,14 @@
                 </ul>
             </div>
         </div>
+
+        <div class="search-box">
+            <form class="form-inline">
+                <i class="bi bi-search"></i>
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <i class="bi bi-three-dots-vertical"></i>
+            </form>
+        </div>
     </nav>
 </header>
 
@@ -80,9 +88,26 @@
         margin-top: 50px;
     }
 
-    .nav-link{
+    .nav-link {
         border-radius: 15px 0 15px 0;
         background-color: #4A90E2;
         margin: 0 5px;
+    }
+
+    .form-inline {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .form-inline input {
+        margin: 0 8px;
+        border-radius: 20px;
+        width: 220px;
+        height: 30px;
+    }
+
+    .form-inline i {
+        font-size: 25px;
     }
 </style>

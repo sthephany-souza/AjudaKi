@@ -4,7 +4,9 @@
 
 <main class="conteudo-container">
     <div class="formulario-informacoes">
-        <form action="post">
+        <form method="post">
+            <h2>Criar campanha:</h2>
+
             <div class="bloco-1">
                 <input type="text" name="Quantia" id="Quantia" placeholder="R$">
             </div>
@@ -15,12 +17,12 @@
             </div>
 
             <div class="bloco-3">
-                <input type="file" name="ImagemProd" id="ImagemProd">
+                <input type="file" name="ImagemProd" id="ImagemProd" accept=".jpeg, .jpg, .png">
             </div>
 
             <div class="bloco-4">
-                <a href="../Campanha/Campanha" class="btn btn-primary">Voltar</a>
-                <button class="btn btn-primary" id="Confirmar">Confirmar</button>
+                <a href="../Campanha/Campanha" class="btn">Voltar</a>
+                <button class="btn" id="Confirmar">Confirmar</button>
             </div>
         </form>
     </div>
@@ -45,22 +47,81 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #fff;
+        width: 1000px;
+        height: 450px;
     }
 
     .formulario-informacoes {
         position: relative;
         display: flex;
+        background-color: #fff;
     }
 
     .formulario-informacoes form {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        width: 300px;
+        width: 400px;
+        height: 450px;
+        padding-top: 30px;
+    }
+
+    .formulario-informacoes form h2{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 15px;
+        color: #4A90E2;
+        font-weight: bold;
+    }
+    
+    .formulario-informacoes .bloco-1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .formulario-informacoes .bloco-2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .formulario-informacoes .bloco-3{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .formulario-informacoes .bloco-4{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+
+    .bloco-4 input {
+        width: 100px;
+    }
+
+    .bloco-4 .btn{
+        border-radius: 15px 0 15px 0;
+        background-color: #4A90E2;
+        color: #fff;
+    }
+
+    input {
+        border: 0;
+        border-radius: 8px;
+        background-color: #D9D9D9;
+        height: 35px;
+        margin: 5px 0;
+    }
+
+    input::placeholder {
+        color: #9d9d9d;
+        opacity: 1;
+        padding-left: 8px;
     }
 
     .image img{
-        width: 727px;
+        width: 580px;
+        height: 450px;
+        object-fit: cover;
     }
 </style>
