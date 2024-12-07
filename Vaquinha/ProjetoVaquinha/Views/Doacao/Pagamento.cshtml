@@ -2,6 +2,16 @@
     ViewData["Title"] = "Doação";
 }
 
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3">
+    <div class="search-box navbar-right">
+        <form class="form-inline">
+            <i class="bi bi-search"></i>
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+            <i class="bi bi-three-dots-vertical"></i>
+        </form>
+    </div>
+</nav>
+
 <main class="pagamento-container">
     <div class="topo">
         <a href="~/Home/Inicio" class="voltar"><span class="bi bi-arrow-left"></span></a>
@@ -38,11 +48,37 @@
     body {
         background-color: #1F4E79;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         width: 1240px;
         height: 460px;
+        margin: 0 25px;
+    }
+
+    .navbar {
+        background-color: #4A90E2;
+        color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+    .form-inline {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .form-inline input {
+        margin: 0 8px;
+        border: none;
+        border-radius: 20px;
+        width: 220px;
+        height: 30px;
+    }
+
+    .form-inline i {
+        font-size: 25px;
     }
 
     .pagamento-container {
